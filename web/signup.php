@@ -1,9 +1,15 @@
 <?php
 session_start();
-$conn = mysqli_connect("ec2-54-243-150-10.compute-1.amazonaws.com", "ncppfvwqgcsxvk", "ab8b66b5920573c30adac4f8546e904c4f35d07c4768ebe7bce60eeedd2f55dd", "d6m4gmpavkoiff");
-if(mysqli_connect_errno()) {
-	echo "Failed to connect: " . mysqli_connect_errno();
-}
+$bradServerName = "ec2-54-243-150-10.compute-1.amazonaws.com";
+$bradUsername = "ncppfvwqgcsxvk";
+$bradPassword = "ab8b66b5920573c30adac4f8546e904c4f35d07c4768ebe7bce60eeedd2f55dd";
+$bradConnect = new mysqli($bradServerName, $bradUsername, $bradPassword);
+
+if($bradConnect->connect_error) {
+    die("Connection failed: " . $bradConnect->connect_error);
+} 
+echo "Connected successfully";
+
 
 $fname = "";
 $em = "";
