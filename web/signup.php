@@ -1,11 +1,9 @@
 <?php
 session_start();
-$bradServerName = "ec2-54-243-150-10.compute-1.amazonaws.com";
-$bradUsername = "ncppfvwqgcsxvk";
-$bradPassword = "ab8b66b5920573c30adac4f8546e904c4f35d07c4768ebe7bce60eeedd2f55dd";
-$bradConnect = new mysqli($bradServerName, $bradUsername, $bradPassword);
+$db = parse_url(getenv("DATABASE_URL"));
+$db["path"] = ltrim($db["path"], "/");
 
-if($bradConnect->connect_error) {
+if($db->connect_error) {
     die("Connection failed: " . $bradConnect->connect_error);
 } 
 echo "Connected successfully";
