@@ -146,7 +146,7 @@ if(isset($_POST['signup-button'])) {
         <div class="or">OR</div>
       </div>
       <footer id="footer">
-      Powered by: © Talented Technologies
+      Powered by: © 2018 Talented Technologies
     </footer>
     </div>
   </body>
