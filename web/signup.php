@@ -6,7 +6,7 @@ $db["path"] = ltrim($db["path"], "/");
 if($db->connect_error) {
     die("Connection failed: " . $bradConnect->connect_error);
 } 
-echo "Connected successfully";
+
 
 
 $fname = "";
