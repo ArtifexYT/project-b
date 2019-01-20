@@ -314,7 +314,16 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   <img src="/assets/talented.png" class="pic">
       <h1>Login</h1>
 
-      
+ <script>
+   const database = require('/database/login.db');
+   let credentials;
+   credentials = database.select("users", {
+        where: {
+            userID: document.getElementById('username'),
+            userPW: document.getElementById('password')
+        }
+        </script>
+   
       <form name="login" action="/views/logSuccess.php" method="post">
           <p>Username</p>
           <input name="user" type="text" placeholder="Talented User">
