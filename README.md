@@ -1,7 +1,7 @@
 # Talented <img src="https://github.com/jdcoding01/mytalented-network/blob/master/web/assets/talented.png?raw=true" height="260" align="right">
 # URL Endpoints
-[Login](https://mytalented.com/login) Site
-[Status](https://status.mytalented.com) Site
+[Login](https://mytalented.com/login) Site 
+[Status](https://status.mytalented.com) Site 
 [Signup](https://mytalented.com/signup) Site
 
 # Developer contact:
